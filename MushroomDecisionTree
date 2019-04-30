@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="odor_none <= 0.5\nsamples = 100.0%\nvalue = [0.518, 0.482]\nclass = edible", fillcolor="#e5813912"] ;
+1 [label="stalk-root_club <= 0.5\nsamples = 56.6%\nvalue = [0.174, 0.826]\nclass = poisonous", fillcolor="#399de5c9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 49.8%\nvalue = [0.071, 0.929]\nclass = poisonous", fillcolor="#399de5eb"] ;
+1 -> 2 ;
+3 [label="samples = 6.7%\nvalue = [0.934, 0.066]\nclass = edible", fillcolor="#e58139ed"] ;
+1 -> 3 ;
+4 [label="spore-print-color_green <= 0.5\nsamples = 43.4%\nvalue = [0.966, 0.034]\nclass = edible", fillcolor="#e58139f6"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="samples = 42.5%\nvalue = [0.986, 0.014]\nclass = edible", fillcolor="#e58139fb"] ;
+4 -> 5 ;
+6 [label="samples = 0.9%\nvalue = [0.0, 1.0]\nclass = poisonous", fillcolor="#399de5ff"] ;
+4 -> 6 ;
+}
